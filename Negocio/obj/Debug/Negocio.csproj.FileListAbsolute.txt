@@ -1,0 +1,11 @@
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Negocio.dll
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Negocio.pdb
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Datos.dll
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Entidades.dll
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Datos.pdb
+C:\Users\USER\source\repos\Evaluacion\Negocio\bin\Debug\Entidades.pdb
+C:\Users\USER\source\repos\Evaluacion\Negocio\obj\Debug\Negocio.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Evaluacion\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Evaluacion\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\USER\source\repos\Evaluacion\Negocio\obj\Debug\Negocio.dll
+C:\Users\USER\source\repos\Evaluacion\Negocio\obj\Debug\Negocio.pdb

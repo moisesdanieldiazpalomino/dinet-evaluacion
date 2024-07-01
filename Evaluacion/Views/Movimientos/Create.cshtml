@@ -1,0 +1,82 @@
+﻿
+@model Entidades.Movimiento 
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Nuevo Movimiento</h2>
+
+
+
+@using (Html.BeginForm("Create", "Movimientos", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Cod CIA </label>
+                @Html.TextBoxFor(m=>m.codCia, new { @class="form-control"})
+            </div>
+
+            <div class="form-group">
+                <label>Compañia Venta </label>
+                @Html.TextBoxFor(m => m.companiaVenta, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Almacen Venta</label>
+                @Html.TextBoxFor(m => m.almacenVenta, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Tipo Movimiento </label>
+                @Html.TextBoxFor(m => m.tipoMovimiento, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Tipo Documento</label>
+                @Html.TextBoxFor(m => m.tipoDocumento, new { @class = "form-control" })
+            </div>
+
+
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Número Documento</label>
+                @Html.TextBoxFor(m => m.nroDocumento, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Cod Item </label>
+                @Html.TextBoxFor(m => m.codItem, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Proveedor </label>
+                @Html.TextBoxFor(m => m.proveedor, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Almacen Destino </label>
+                @Html.TextBoxFor(m => m.almacendestino, new { @class = "form-control" })
+            </div>
+
+            <div class="form-group">
+                <label>Cantidad </label>
+                
+                @Html.TextBoxFor(m => m.cantidad, new { @class = "form-control" })
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-primary" type="submit">Registrar</button>
+        </div>
+    </div>
+
+}
+

@@ -1,0 +1,9 @@
+C:\Users\USER\source\repos\Evaluacion\Datos\bin\Debug\Datos.dll
+C:\Users\USER\source\repos\Evaluacion\Datos\bin\Debug\Datos.pdb
+C:\Users\USER\source\repos\Evaluacion\Datos\bin\Debug\Entidades.dll
+C:\Users\USER\source\repos\Evaluacion\Datos\bin\Debug\Entidades.pdb
+C:\Users\USER\source\repos\Evaluacion\Datos\obj\Debug\Datos.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Evaluacion\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Evaluacion\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\USER\source\repos\Evaluacion\Datos\obj\Debug\Datos.dll
+C:\Users\USER\source\repos\Evaluacion\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,84 @@
+﻿
+@model List<Entidades.Movimiento>
+
+@{
+    ViewBag.Title = "Movimientos";
+}
+
+
+<h2>Listado de Movimientos</h2>
+
+
+<a class="btn btn-primary">@Html.ActionLink("Nuevo", "Create", "Movimientos")</a>
+
+<hr />
+
+<form method="POST" action="/Movimientos/Buscar">
+    <div class="row">
+        <div class="col-md-3 form-group">
+            <label>Fecha Inicio</label>
+            <input type="date" id="FechaInicio" name="fechaInicio" class="form-control" />
+        </div>
+
+        <div class="col-md-3 form-group">
+            <label>Fecha Fin</label>
+            <input type="date" id="FechaFin" name="fechaFin" class="form-control" />
+        </div>
+
+        <div class="col-md-3 form-group">
+            <label>Tipo Movimiento</label>
+            <input type="text" id="TipoMovimiento" name="tipoMovimiento" class="form-control" />
+        </div>
+
+        <div class="col-md-3 form-group">
+            <label>Tipo Documento</label>
+            <input type="text" id="NumeroDocumento" name="numeroDocumento" class="form-control" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 ">
+            <button class="btn btn-secondary" type="submit">Buscar</button>
+        </div>
+    </div>
+</form>
+
+
+<table class="table table-bordered" style="margin-top:20px;">
+    <thead>
+        <tr>
+            <th>COD CIA</th>
+            <th>COMPAÑIA VENTA</th>
+            <th>ALMACEN_VENTA</th>
+            <th>TIPO MOVIMIENTO</th>
+            <th>NUMERO DOCUMENTO</th>
+            <th>FECHA TRANSACCIÓN</th>
+        </tr>
+    </thead>
+    @if (Model != null && Model.Count > 0)
+    {
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.codCia</td>
+                    <td>@item.companiaVenta</td>
+                    <td>@item.almacenVenta</td>
+                    <td>@item.tipoMovimiento</td>
+                    <td>@item.nroDocumento</td>
+                    <td>@item.fechaTransaccion</td>
+                </tr>
+            }
+        </tbody>
+
+    }
+            else
+            {
+                <tbody>
+                    <tr>
+                        <td colspan="6" align="center">No se encontraron resultados</td>
+                    </tr>
+                </tbody>
+            }
+
+</table>
